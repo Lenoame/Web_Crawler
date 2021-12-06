@@ -29,3 +29,21 @@ e.send_keys(Keys.CONTROL, 'v')
 
 time.sleep(1)
 e.send_keys(Keys.ENTER)
+
+# 블로그 글적는 페이지까지 이동하는 코드
+time.sleep(2)
+driver.get(https://m.blog.naver.com/FeedList.nhn)
+time.sleep(1.5)
+driver.get(https://blog.editor.naver.com/editor?deviceType=mobile&returnUrl=http~~)
+
+time.sleep(1.5)
+# 블로그 제목
+e = driver.find_element_by_css_selector('.documentTitle_blog .se_textarea')
+e.send_keys('블로그 제목입니다')
+
+# 블로그 내용
+e = driver.find_element_by_css_selector('.se_sectionArea .se_editable')
+e.send_keys('블로그 내용입니다. \n 강남 맛집 소개')
+e.send_keys(Keys.ENTER)
+e.send_keys('어디어디어디')
+
