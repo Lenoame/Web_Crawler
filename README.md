@@ -470,7 +470,7 @@ pip install pyperclip 설치
 
 안에 id나 class를 상세하게 찾으면 좋다
 
-<input> 에다가 send_keys(파일경로) 이러면 파일업로드 됩니다(검색과 연구)
+<input> 에다가 send_keㄴys(파일경로) 이러면 파일업로드 됩니다(검색과 연구)
 
 ## os module 사용법
 이런 것들은 os module로 사용하는 것이 좋다
@@ -535,3 +535,18 @@ os.path.join('경로', '경로2') → 경로/경로2로 합쳐짐 → 경로 합
 os.getcwd() → get currect working directory
 
 현재 파이썬 파일의 절대경로를 알려주는 함수
+
+## 파이썬 class/object 문법
+게임 정보제공 사이트를 만들고 싶다
+
+- 그럼 캐릭터마다 정보를 자료형으로 정리하는게 우선
+
+class 문법 : 오브젝트 한줄컷 생산해주는 기계
+
+object 뽑을 때 def __init__ 가 실행된다
+
+self는 새로 생성될 object를 뜻함
+
+object 생성기계 만드시면 비슷하게 생긴 object 자료들 쉽게 생성가능
+
+init 어쩌구 self 어쩌구 잘 쓰면 object 자료에 뭐 집어넣을지 초기값도 설정 가능하다
